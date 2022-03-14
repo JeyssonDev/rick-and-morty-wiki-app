@@ -1,0 +1,47 @@
+.SuggestionsListComponent {
+   background: #fff;
+   color: rgb(83, 19, 83);
+   width: 95.5%;
+   max-height: 45vh;
+   margin: auto;
+   border: 2px solid rgb(83, 19, 83);
+   border-radius: 0 0 0.5rem 0.5rem;
+   overflow-y: scroll;
+   position: absolute;
+   left: 0;
+   right: 0;
+   z-index: 10;
+}
+
+.SuggestionsListComponent::-webkit-scrollbar {
+   background: transparent;
+   width: 0.5rem;
+}
+
+.SuggestionsListComponent::-webkit-scrollbar-track {
+   background: rgba(83, 19, 83, 0.5);
+   border-radius: 1rem;
+}
+
+.SuggestionsListComponent::-webkit-scrollbar-thumb {
+   background: rgba(0, 0, 0, 0.7);
+   border-radius: 1rem;
+}
+
+.suggestion {
+   font-size: 1.1rem;
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+}
+
+.suggestion:hover {
+   background: rgb(83, 19, 83);
+   color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+   .SuggestionsListComponent::-webkit-scrollbar {
+      background: transparent;
+      width: 0.75rem;
+   }
+}

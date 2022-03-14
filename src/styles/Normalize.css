@@ -1,0 +1,40 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+li {
+   list-style: none;
+}
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -o-appearance: none;
+   -ms-appearance: none;
+   appearance: none;
+   background: transparent;
+   font-family: inherit;
+   font-size: inherit;
+   line-height: inherit;
+   width: 100%;
+   margin: 0;
+   padding: 0 1em 0 0;
+   border: none;
+   outline: transparent;
+   cursor: inherit;
+}
+
+select::-ms-expand {
+   display: none;
+}

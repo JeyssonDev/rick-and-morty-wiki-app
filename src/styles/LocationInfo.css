@@ -1,0 +1,49 @@
+.LocationInfoComponent {
+   background: rgba(83, 19, 83, 0.5);
+   width: 100%;
+   min-height: 329.6px;
+   margin: 1rem 0;
+   padding: 1rem 2.5%;
+   border-radius: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.location-info-container {
+   width: 100%;
+}
+
+.location-name {
+   text-align: center;
+   margin: 0 0 0.5rem 0;
+}
+
+.location-info {
+   display: grid;
+   grid-template-rows: repeat(3, 1fr);
+}
+
+.location-text-info {
+   text-align: center;
+   margin: 0.5rem 0;
+}
+
+.subtitle {
+   display: block;
+   margin: 0 0 0.5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+   .LocationInfoComponent {
+      min-height: 148.8px;
+      margin: 2rem 0;
+      padding: 1rem 10%;
+   }
+
+   .location-info {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+   }
+}

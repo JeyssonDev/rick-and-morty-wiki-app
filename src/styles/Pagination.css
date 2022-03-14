@@ -1,0 +1,16 @@
+.PaginationComponent {
+   background: transparent;
+   color: #fff;
+   font-family: 'Fredoka';
+   width: 35px;
+   height: 35px;
+   margin: 0 0.5rem;
+   border: 2px solid #fff;
+   border-radius: 0.5rem;
+   cursor: pointer;
+   transition: 0.2s;
+}
+
+.PaginationComponent:hover {
+   background-color: rgba(0, 0, 0, 0.5);
+}

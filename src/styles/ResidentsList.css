@@ -1,0 +1,55 @@
+.ResidentListComponent {
+   background: rgba(83, 19, 83, 0.5);
+   width: 100%;
+   min-height: calc(100vh - 542px);
+   margin: 0 0 2rem 0;
+   border-radius: 1rem;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: flex-start;
+   align-items: center;
+   position: relative;
+}
+
+.residents-title {
+   margin: 1rem 0;
+}
+
+.hr {
+   background: rgba(255, 255, 255, 0.1);
+   width: 97%;
+   height: 3px;
+   border: none;
+   border-radius: 1rem;
+}
+
+.residents-container {
+   width: 100%;
+   padding: 1rem 0 4rem 0;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+}
+
+.pagination-section {
+   /* background: red; */
+   margin: 0 1rem;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+   .ResidentListComponent {
+      min-height: calc(100vh - 450px);
+   }
+}
+
+@media only screen and (min-width: 1071px) {
+   .residents-container {
+      justify-content: space-between;
+   }
+}

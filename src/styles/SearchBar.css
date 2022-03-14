@@ -1,0 +1,107 @@
+.SearchBarComponent {
+   width: 90%;
+   position: relative;
+}
+
+.search-bar-container {
+   background: rgb(83, 19, 83);
+   margin: auto;
+   padding: 0.25rem 2.5%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 5rem;
+}
+
+.select-container {
+   width: fit-content;
+   height: 1.5rem;
+   display: grid;
+   grid-template-areas: 'select';
+   align-items: center;
+   position: relative;
+   cursor: pointer;
+}
+
+.select-container::after {
+   content: '';
+   width: 0.7rem;
+   height: 0.4rem;
+   background: #fff;
+   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+   justify-self: end;
+}
+
+select,
+.select-container:after {
+   grid-area: select;
+}
+
+.select-input {
+   color: #fff;
+   font-size: 1rem;
+}
+
+.select-input-option {
+   background: rgb(83, 19, 83);
+   height: 50px;
+}
+
+.select-input-option:hover {
+   background-color: rgb(0, 0, 0);
+}
+
+.text-input {
+   color: rgb(83, 19, 83);
+   font-family: 'Fredoka';
+   font-size: 1rem;
+   padding: 0 0.25rem;
+   outline: transparent;
+   border: none;
+   transition: 0.5s;
+}
+
+.text-input::placeholder {
+   color: rgb(83, 19, 83);
+   font-size: 0.75rem;
+   font-weight: bold;
+   transition: 0.5s;
+}
+
+.text-input:focus {
+   background: rgba(0, 0, 0, 0.7);
+   color: #fff;
+}
+
+.text-input:focus::placeholder {
+   color: #fff;
+}
+
+.searchBar {
+   background: #fff;
+   flex-grow: 1;
+   height: 1.5rem;
+   margin: 0 0.25rem;
+}
+
+.button {
+   background: transparent;
+   color: #fff;
+   padding: 0.25rem;
+   border: none;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+   .SearchBarComponent {
+      width: 75%;
+   }
+
+   .search-bar-container {
+      padding: 0.25rem 1rem;
+   }
+}

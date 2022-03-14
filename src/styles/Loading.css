@@ -1,0 +1,15 @@
+.LoadingComponent {
+   width: fit-content;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loading-gif-container {
+   width: 100px;
+}
+
+.loading-gif {
+   width: 100%;
+}
