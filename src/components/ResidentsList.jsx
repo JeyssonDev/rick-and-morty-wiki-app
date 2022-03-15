@@ -27,7 +27,7 @@ const ResidentsList = ({ residents, error, executeScroll }) => {
          <hr className='hr residents-hr' />
          {residents?.length === 0 && (
             <div className='no-data-message'>
-               'There are no residents to diplay!'
+               There are no residents to display...
             </div>
          )}
          {residents ? (
@@ -62,7 +62,7 @@ const ResidentsList = ({ residents, error, executeScroll }) => {
                </div>
             </>
          ) : error?.error ? (
-            <div className='error-message'>'Something went wrong...'</div>
+            <div className='error-message'>Something went wrong...</div>
          ) : (
             <Loading />
          )}
