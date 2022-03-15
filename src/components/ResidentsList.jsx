@@ -25,7 +25,11 @@ const ResidentsList = ({ residents, error, executeScroll }) => {
       <div className='ResidentListComponent'>
          <h2 className='residents-title'>Residents</h2>
          <hr className='hr residents-hr' />
-         {residents?.length === 0 && 'There are no residents to diplay!'}
+         {residents?.length === 0 && (
+            <div className='no-data-message'>
+               'There are no residents to diplay!'
+            </div>
+         )}
          {residents ? (
             <>
                <div className='residents-container'>
@@ -58,7 +62,7 @@ const ResidentsList = ({ residents, error, executeScroll }) => {
                </div>
             </>
          ) : error?.error ? (
-            'Something went wrong...'
+            <div className='error-message'>'Something went wrong...'</div>
          ) : (
             <Loading />
          )}

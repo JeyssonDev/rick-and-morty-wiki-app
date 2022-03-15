@@ -1,9 +1,9 @@
 .card {
    background: rgba(0, 0, 0, 0.7);
-   min-width: 300px;
+   min-width: 250px;
    max-width: 450px;
    height: fit-content;
-   min-height: 515.75px;
+   min-height: 256px;
    margin: 1rem 1rem 0 1rem;
    border-radius: 0.5rem;
    display: grid;

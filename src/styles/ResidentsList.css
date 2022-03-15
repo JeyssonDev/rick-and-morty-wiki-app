@@ -32,7 +32,6 @@
 }
 
 .pagination-section {
-   /* background: red; */
    margin: 0 1rem;
    display: flex;
    justify-content: center;
@@ -40,6 +39,16 @@
    left: 0;
    right: 0;
    bottom: 0.5rem;
+}
+
+.error-message {
+   text-align: center;
+   margin: 0.5rem 0 0 0;
+}
+
+.no-data-message {
+   text-align: center;
+   margin: 0.5rem 0 0 0;
 }
 
 @media only screen and (min-width: 768px) {
